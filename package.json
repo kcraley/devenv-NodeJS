@@ -4,6 +4,12 @@
   "description": "A development environment template for starting a new project with NodeJS.",
   "main": "index.js",
   "scripts": {
+    "prebuild": "",
+    "build": "babel src -s inline -d dist",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . -ext .js --fix",
+    "prestart": "",
+    "start": "npm run build && node dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
