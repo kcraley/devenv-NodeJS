@@ -1,0 +1,19 @@
+{
+  "reporter": [
+    "cobertura",
+    "html",
+    "lcov",
+    "text-summary",
+    "text"
+  ],
+  "include": [
+    "src/**/*.js"
+  ],
+  "sourceMap": true,
+  "require": [
+    "@babel/register"
+  ],
+  "instrument": false,
+  "all": true,
+  "report-dir": "./coverage"
+}

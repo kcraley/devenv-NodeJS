@@ -1,0 +1,13 @@
+# Excluded directories
+.sonarlint/
+.vscode/
+coverage/
+node_modules/
+test-results/
+
+# Excluded files
+.gitignore
+Dockerfile
+docker-compose.yml
+LICENSE
+*.md
