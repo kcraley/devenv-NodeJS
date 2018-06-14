@@ -6,6 +6,7 @@
   "scripts": {
     "prebuild": "",
     "build": "babel src -s inline -d dist",
+    "dev": "nodemon --exec babel-node src/",
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . -ext .js --fix",
     "prestart": "",
