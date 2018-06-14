@@ -5,6 +5,9 @@
 test-results/
 coverage/
 
+# Production build directory
+dist/
+
 # Logs
 logs
 *.log
