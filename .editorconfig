@@ -21,8 +21,11 @@ spaces_around_brackets = inside
 indent_brace_style = K&R
 
 # Formatting for indentation size
-[*.{js,json,yml}]
+[*.{js,yml}]
 indent_size = 2
+
+[*.json]
+indent_size = 4
 
 # Markdown formatting
 [*.md]
