@@ -1,53 +1,57 @@
 {
-  "name": "devenv-nodejs",
-  "version": "1.0.0",
-  "description": "A development environment template for starting a new project with NodeJS.",
-  "main": "index.js",
-  "scripts": {
-    "prebuild": "",
-    "build": "babel src -s inline -d dist",
-    "dev": "nodemon --exec babel-node src/",
-    "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . -ext .js --fix",
-    "prestart": "",
-    "start": "npm run build && node dist/",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kcraley/devenv-NodeJS.git"
-  },
-  "keywords": [
-    "NodeJS",
-    "devenv"
-  ],
-  "author": "Keith Craley <kcral21@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kcraley/devenv-NodeJS/issues"
-  },
-  "homepage": "https://github.com/kcraley/devenv-NodeJS#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.49",
-    "@babel/core": "^7.0.0-beta.49",
-    "@babel/node": "^7.0.0-beta.49",
-    "@babel/register": "^7.0.0-beta.51",
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.2.3",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.12.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.17.5",
-    "nyc": "^12.0.2",
-    "sinon": "^5.1.0",
-    "supertest": "^3.1.0"
-  },
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "chalk": "^2.4.1",
-    "debug": "^3.1.0",
-    "express": "^4.16.3"
-  }
+    "name": "devenv-nodejs",
+    "version": "1.0.0",
+    "description": "A development environment template for starting a new project with NodeJS.",
+    "main": "index.js",
+    "scripts": {
+        "prebuild": "",
+        "build": "babel src -s inline -d dist",
+        "dev": "nodemon --exec babel-node src/",
+        "lint": "eslint . --ext .js",
+        "lint:fix": "eslint . -ext .js --fix",
+        "prestart": "",
+        "start": "npm run build && node dist/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kcraley/devenv-NodeJS.git"
+    },
+    "keywords": [
+        "NodeJS",
+        "devenv"
+    ],
+    "author": "Keith Craley <kcral21@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kcraley/devenv-NodeJS/issues"
+    },
+    "homepage": "https://github.com/kcraley/devenv-NodeJS#readme",
+    "devDependencies": {
+        "@babel/cli": "^7.0.0-beta.49",
+        "@babel/core": "^7.0.0-beta.49",
+        "@babel/node": "^7.0.0-beta.49",
+        "@babel/register": "^7.0.0-beta.51",
+        "babel-cli": "^6.26.0",
+        "babel-eslint": "^8.2.3",
+        "babel-preset-env": "^1.7.0",
+        "eslint": "^4.19.1",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-plugin-import": "^2.12.0",
+        "mocha": "^5.2.0",
+        "nodemon": "^1.17.5",
+        "nyc": "^12.0.2",
+        "sinon": "^5.1.0",
+        "supertest": "^3.1.0"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "chalk": "^2.4.1",
+        "debug": "^3.1.0",
+        "express": "^4.16.3"
+    },
+    "nodemonConfig": {
+        "ignore": ["node_modules/*", "test/*"],
+        "delay": "2500"
+    }
 }
