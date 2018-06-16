@@ -51,7 +51,7 @@
         "express": "^4.16.3"
     },
     "nodemonConfig": {
-        "ignore": ["node_modules/*", "test/*"],
+        "ignore": ["node_modules/*"],
         "delay": "2500"
     }
 }
