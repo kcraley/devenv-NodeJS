@@ -11,11 +11,11 @@ app.use(health);
 
 app.set('HEALTH_STATUS', 'OK')
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.status(200).send('Application is currently running!');
 });
 
-app.listen(port, function() {
+app.listen(port, () => {
   console.log(`${chalk.green(`Listening on port ${port}...`)}`);
 });
 
